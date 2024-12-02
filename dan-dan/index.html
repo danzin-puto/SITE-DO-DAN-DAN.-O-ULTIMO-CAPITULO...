@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <p class="bemvindo">Bem-vindo à sua Calculadora de Calorias!</p>
+    </div>
+    <div class="container">
+        <h1 class="titulo">Calculadora de Calorias</h1>
+        <p class="descricao">Descubra quantas calorias você precisa consumir diariamente com base no seu estilo de vida.</p>
+        <form class="formulario">
+            <label for="idade">Idade:</label>
+            <input type="number" class="campo idade" required placeholder="Digite sua idade"><br>
+            
+            <label for="peso">Peso (kg):</label>
+            <input type="number" class="campo peso" required placeholder="Digite seu peso"><br>
+            
+            <label for="altura">Altura (cm):</label>
+            <input type="number" class="campo altura" required placeholder="Digite sua altura"><br>
+            
+            <label for="genero">Género:</label>
+            <select class="campo genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select><br>
+            
+            <label for="atividade">Nível de Atividade:</label>
+            <select class="campo atividade">
+                <option value="1.2">Sedentário</option>
+                <option value="1.375">Ligeiramente ativo</option>
+                <option value="1.55">Ativo</option>
+                <option value="1.725">Muito ativo</option>
+            </select><br><br>
+            
+            <button type="button" class="botao" onclick="calcularCalorias()">Calcular</button>
+        </form>
+        <div class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
